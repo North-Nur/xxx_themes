@@ -1,0 +1,1896 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@200;300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Mitr:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+@font-face {
+  font-family: 'ChaKraCustom';
+  src: url(ChakraPetch-Medium.ttf);
+  unicode-range: U+0000-00FF, U+0020-007F; /* ช่วง Unicode ภาษาอังกฤษ */
+}
+
+
+* {
+  font-family: 'ChaKraCustom', 'Anuphan', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  cursor: default;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+
+
+
+
+:root {
+  --bg_100: rgb(23, 23, 23, 1);
+  --bg: rgb(23, 23, 23, .9);
+  
+  --bg_hud: rgb(23, 23, 23, .8);
+
+  --item_bg: rgba(37, 37, 37,.95);
+
+  --bg_hud_1: rgb(23, 23, 23, .8);
+
+
+  /* --bg_100: #161d25; */
+  /* --bg: #161d25ed;
+  --bg_hud_1: #161d25cc; */
+
+
+
+
+  --red_clr: rgb(221, 53, 53);
+  --red_bg_clr: #311614;
+
+  --green_clr: #55caa3;
+  --green_bg_clr: #112520ec;
+
+
+
+
+  /* --main_linear: linear-gradient(45deg, rgb(64, 189, 151), rgb(70, 211, 169));
+  --main_1: rgb(70, 211, 169);
+  --main_2: rgba(85, 214, 192, 0.3);
+  --main_3: rgba(26, 87, 77, 0.712);  */
+
+
+  
+
+
+  /* --main_linear: linear-gradient(45deg, #d61952, #E81C5A);
+  --main_1: #E81C5A;
+  --main_2: #d6195262;
+  --main_3: #5f1d30ea;
+  --main_4: #3a3a3a;
+  --main_5: #3f1823ec;
+  --main_6: #7b1c3a; */
+
+
+
+
+
+
+
+  --main_linear: linear-gradient(45deg, #4b939c, #5eb4bf);
+  --main_1: #5eb4bf;
+  --main_2: #467980dc;
+  --main_3: #2f5358d1; 
+  --main_4: #67B1BA;
+  --main_5: #2f5358;
+  --main_6: #3c6c72; 
+  --main_7_hover: #3c686d;
+  --main_8_font: #98e9f3;
+
+
+
+
+  --bg_pink_100: #1f1115;
+  --bg_pink: #1f1115ea;
+
+
+  --bg_pink_100: #22171c;
+  --bg_pink: #22171ce8;
+
+}
+.logo_test{
+  position: absolute;
+  right: 0.2%;
+  top: 4.5%;
+  width: 8.5vh;
+  z-index: 555;
+}
+
+.logo_server{
+  position: absolute;
+  right: 2%;
+  top: 4%;
+}
+.logo_server>img{
+  width: 9vh;
+}
+
+.bg {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -5;
+  
+}
+
+
+iconify-icon,
+p,
+img {
+  pointer-events: none;
+}
+
+
+
+
+
+:root{
+  --border_dis_ag: 0vh;
+  --twitter_black: rgba(23, 23, 23, 0.85);
+  --twitter_vip: linear-gradient(45deg,#751935ce -50%,#9a173ece);
+  --twitter_vip: linear-gradient(45deg,#822149d6 -20%,#ab446fd6);
+  --twitter_vip1: #b89267;
+
+  --twitter_pink1: #9c2247;
+
+}
+
+
+.display_twitter{
+  /* display: none; */
+  position: absolute;
+  left: 1%;
+  top: 2.5%;
+  z-index: 99;
+}
+.container_twitter{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 90vh;
+  overflow: hidden;
+  width: 45vh;
+  gap: .4vh;
+}
+
+
+
+.twitter_box_1{
+  position: relative;
+  display: flex;
+  background: var(--twitter_black);
+  /* border-radius: .3vh; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .twitter_box_1.vip{
+  background: var(--twitter_vip);
+  background: #ffffffd7;
+  border-radius: .4vh 0 0 .4vh;
+}
+.twitter_box_1.vip p:not(.tw_tag p){
+  font-weight: 500;
+  color: black !important;
+}
+.twitter_box_1.vip .box_image_in{
+  box-shadow: 0 0 0 .2vh var(--twitter_vip1) inset;
+  border-radius: 50%;
+}
+.twitter_box_1.vip .box_image_in>img{
+  box-shadow: 0 0 0 .2vh var(--twitter_vip1), 0 .4vh .6vh rgba(0, 0, 0, 0.65);
+  border-radius: 50%;
+}
+.twitter_box_1.vip .box_image_in::before{
+  background: var(--twitter_vip1);
+  color: #fff;
+}
+.twitter_box_1.vip .tw_tag{
+  opacity: 1;
+  background: var(--twitter_vip1);
+  color: #fff !important;
+}
+.twitter_box_1.vip .box_image_in>iconify-icon:not(.question_icon){
+  color: var(--twitter_vip1);
+  right: -.4vh;
+  top: -.6vh;
+  rotate: 38deg;
+}
+.twitter_box_1.vip .question_icon{
+  color: black;
+} */
+
+
+
+
+
+
+/* .twitter_box_1.celeb{
+  background: linear-gradient(45deg,#8277c2e1 -20%,#7187c2e7);
+  border-radius: .4vh 0 0 .4vh;
+}
+.twitter_box_1.celeb p:not(.tw_tag p){
+  color: #efefef !important;
+}
+.twitter_box_1.celeb .box_image_in{
+  box-shadow: 0 0 0 .2vh #ac9cff inset;
+  border-radius: 50%;
+}
+.twitter_box_1.celeb .box_image_in>img{
+  box-shadow: 0 0 0 .2vh #ac9cff, 0 .4vh .6vh rgba(0, 0, 0, 0.65);
+  border-radius: 50%;
+}
+.twitter_box_1.celeb .box_image_in::before{
+  background: #ffffff;
+  color: #fff;
+}
+.twitter_box_1.celeb .tw_tag{
+  opacity: 1;
+  background: #7065a8;
+  color: #fff !important;
+}
+.twitter_box_1.celeb .box_image_in>iconify-icon:not(.question_icon){
+  color: #ffffff;
+  right: -.5vh;
+  bottom: -.5vh;
+  font-size: 1.8vh;
+  z-index: 5;
+  filter: drop-shadow(0 -.3vh .1vh rgba(0, 0, 0, 0.5));
+} */
+
+
+
+
+.twitter_box_1.police{
+  background: linear-gradient(45deg,rgba(19, 151, 207, 0.88) -50%,rgba(0, 47, 67, 0.88));
+  box-shadow: 0 0 0 .1vh rgba(36, 132, 173, 0.5) inset;
+}
+
+.twitter_box_1.police .tw_box_image{
+  height: 100%;
+  width: 4.2vh;
+}
+.twitter_box_1.police .tw_box_detail{
+  width: 26.8vh;
+}
+.twitter_box_1.police p:not(.tw_tag p){
+  color: #efefef !important;
+}
+.twitter_box_1.police .tw_box_image iconify-icon{
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 3.6vh;
+  font-size: 1.8vh;
+  color: #fff;
+  border-radius: .4vh 0 0 .4vh;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+.twitter_box_1.medic{
+  background: linear-gradient(45deg,rgba(14, 161, 146, 0.88) -50%,rgba(15, 76, 70, 0.88));
+  box-shadow: 0 0 0 .1vh rgba(50, 179, 166, 0.5) inset;
+}
+
+.twitter_box_1.medic .tw_box_image{
+  height: 100%;
+  width: 4.2vh;
+}
+.twitter_box_1.medic .tw_box_detail{
+  width: 26.8vh;
+}
+.twitter_box_1.medic p:not(.tw_tag p){
+  color: #efefef !important;
+}
+.twitter_box_1.medic .tw_box_image iconify-icon{
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 3.6vh;
+  font-size: 1.8vh;
+  color: #fff;
+  border-radius: .4vh 0 0 .4vh;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+.twitter_box_1.council{
+  background: linear-gradient(45deg,rgba(129, 114, 71, 0.88) -50%,rgba(58, 53, 33, 0.88));
+  box-shadow: 0 0 0 .1vh rgba(171, 147, 76, 0.6) inset;
+}
+
+.twitter_box_1.council .tw_box_image{
+  height: 100%;
+  width: 4.2vh;
+}
+.twitter_box_1.council .tw_box_detail{
+  width: 26.8vh;
+}
+.twitter_box_1.council .tw_name{
+  color: rgb(235, 204, 110);
+}
+.twitter_box_1.council p:not(.tw_tag p,.tw_name){
+  color: #efefef ;
+}
+.twitter_box_1.council .tw_box_image iconify-icon{
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 3.6vh;
+  font-size: 1.8vh;
+  color: #fff;
+  border-radius: .4vh 0 0 .4vh;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+.twitter_box_1.bodybag{
+  background: linear-gradient(45deg,rgba(154, 55, 55, 0.88) -50%,rgba(73, 19, 19, 0.88));
+  box-shadow: 0 0 0 .1vh rgba(180, 40, 40, 0.5) inset;
+}
+
+.twitter_box_1.bodybag .tw_box_image{
+  height: 100%;
+  width: 4.2vh;
+}
+.twitter_box_1.bodybag .tw_box_detail{
+  width: 26.8vh;
+}
+.twitter_box_1.bodybag .tw_name{
+  color: #fff;
+}
+.twitter_box_1.bodybag p:not(.tw_tag p,.tw_name){
+  color: #efefef ;
+}
+.twitter_box_1.bodybag .tw_box_image iconify-icon{
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 3.6vh;
+  font-size: 2vh;
+  color: #fff;
+  border-radius: .4vh 0 0 .4vh;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+.twitter_box_1.police_case{
+  background: linear-gradient(45deg,rgba(147, 98, 163, 0.88) -100%,rgba(37, 27, 41, 0.88));
+  box-shadow: 0 0 0 .1vh rgba(130, 80, 146, 0.65) inset;
+}
+
+.twitter_box_1.police_case .tw_box_image{
+  height: 100%;
+  width: 4.2vh;
+}
+.twitter_box_1.police_case .tw_box_detail{
+  width: 26.8vh;
+}
+.twitter_box_1.police_case p:not(.tw_tag p){
+  color: #efefef !important;
+}
+.twitter_box_1.police_case .tw_box_image iconify-icon{
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 3.6vh;
+  font-size: 1.8vh;
+  color: #fff;
+  border-radius: .4vh 0 0 .4vh;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.twitter_box_1.admin{
+  background: linear-gradient(45deg,rgba(255, 33, 33, 0.88) -50%,rgba(141, 0, 110, 0.88));
+}
+
+.twitter_box_1.admin .tw_box_image{
+  height: 100%;
+  width: 4.2vh;
+}
+.twitter_box_1.admin .tw_box_detail{
+  min-width: 30.8vh;
+  max-width: 30.8vh;
+}
+.twitter_box_1.admin p:not(.tw_tag p){
+  color: #efefef !important;
+}
+.twitter_box_1.admin .tw_box_image iconify-icon{
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 3.6vh;
+  font-size: 1.8vh;
+  color: #fff;
+  border-radius: .4vh 0 0 .4vh;
+  /* background: rgba(0, 255, 229, 0.3); */
+  background: rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+
+
+.twitter_box_1.normal_v1{
+  background: linear-gradient(45deg,#162528e4,#233a3fe4);
+  box-shadow: 0 0 0 .1vh #53929bbf inset;
+}
+/* .twitter_box_1.normal_v1::after{
+  opacity: 1;
+  background: #53919b;
+} */
+/* .twitter_box_1.normal_v1::before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(bg_bd_02.png) top repeat;
+  background-size: 100%;
+  opacity: 1;
+} */
+
+
+.twitter_box_1.normal_v1 .box_image_in{
+  box-shadow: 0 0 0 .1vh var(--main_1) inset;
+}
+.twitter_box_1.normal_v1 .box_image_in::before{
+  background: var(--main_1);
+}
+.twitter_box_1.normal_v1 .box_image_in img{
+}
+
+.twitter_box_1.normal_v1 .tw_name{
+  color: var(--main_8_font);
+}
+
+
+
+.twitter_box_1::after{
+  position: absolute;
+  content: "";
+  width: 8vh;
+  height: .5vh;
+  background: #b13056;
+  clip-path: polygon(8% 0%, 100% 0, 100% 100%, 0% 100%);
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+}
+
+
+
+
+
+
+
+
+.twitter_box_1.normal_v2{
+  background: linear-gradient(45deg,#16464dd9,#275961db);
+  box-shadow: 0 0 0 .1vh #27818e inset;
+}
+/* .twitter_box_1.normal_v1::after{
+  opacity: 1;
+  background: #53919b;
+} */
+/* .twitter_box_1.normal_v1::before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(bg_bd_02.png) top repeat;
+  background-size: 100%;
+  opacity: 1;
+} */
+
+
+.twitter_box_1.normal_v2 .box_image_in{
+  box-shadow: 0 0 0 .1vh #36afc2;
+  border-radius: 50%;
+}
+/* .twitter_box_1.normal_v2 .box_image_in::before{
+  background: #3abed1;
+} */
+
+.twitter_box_1.normal_v2 .box_image_in img{
+  border-radius: 50%;
+}
+.twitter_box_1.normal_v2 .tw_name{
+  color: #51d5ea;
+}
+.twitter_box_1.normal_v2 .box_image_in::before, .twitter_box_1.normal_v2 .box_image_in::after{
+  opacity: 0;
+}
+.twitter_box_1.normal_v2 .border_theme{
+  /* margin-top: -.4vh; */
+  position: absolute;
+  width: 5vh;
+  height: 5vh;
+  /* background: red; */
+  opacity: 1;
+  background: url(./img/bd_02.png) center no-repeat;
+  background-size: 100%;
+  filter: drop-shadow(0 .3vh .2vh rgba(0, 0, 0, 0.35));
+  z-index: 4;
+}
+.twitter_box_1.normal_v2::before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(./img/bg_bd_04.png) top no-repeat;
+  background-size: 200%;
+  opacity: .05;
+}
+.twitter_box_1.normal_v2 .tw_box_detail::before{
+  position: absolute;
+  content: "";
+  bottom: -.5vh;
+  right: -1.1vh;
+  width: 3.5vh;
+  height: 3.5vh;
+  background: url(./img/wave_01.png) bottom no-repeat;
+  background-size: 100%;
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.twitter_box_1.normal_v3{
+  background: linear-gradient(45deg,#11283ad9,#274a61db);
+  box-shadow: 0 0 0 .1vh #4a8bb7 inset;
+}
+
+
+.twitter_box_1.normal_v3 .box_image_in{
+  box-shadow: 0 0 0 .1vh #4a8bb7 ;
+  border-radius: 10%;
+}
+
+.twitter_box_1.normal_v3 .box_image_in img{
+  border-radius: 10%;
+
+}
+.twitter_box_1.normal_v3 .tw_name{
+  color: #66c2ff;
+}
+.twitter_box_1.normal_v3 .box_image_in::before, .twitter_box_1.normal_v2 .box_image_in::after{
+  opacity: 0;
+}
+/* .twitter_box_1.normal_v3 .border_theme{
+  position: absolute;
+  width: 5vh;
+  height: 5vh;
+  opacity: 1;
+  background: url(./img/./theme_img/bd_02.png) center no-repeat;
+  background-size: 100%;
+  filter: drop-shadow(0 .3vh .2vh rgba(0, 0, 0, 0.35));
+  z-index: 4;
+} */
+.twitter_box_1.normal_v3::before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(./img/zz_01.webp) top no-repeat;
+  background-size: 150%;
+  opacity: .04;
+}
+/* .twitter_box_1.normal_v3 .tw_box_detail::before{
+  position: absolute;
+  content: "";
+  bottom: -.5vh;
+  right: -1.1vh;
+  width: 3.5vh;
+  height: 3.5vh;
+  background: url(./img/wave_01.png) bottom no-repeat;
+  background-size: 100%;
+  opacity: 1;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+.twitter_box_1.normal_v4{
+  background: linear-gradient(45deg,#491515d9,#6b1f1fd9);
+  box-shadow: 0 0 0 .1vh #c03737 inset;
+}
+/* .twitter_box_1.normal_v1::after{
+  opacity: 1;
+  background: #53919b;
+} */
+/* .twitter_box_1.normal_v1::before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(./img/bg_bd_02.png) top repeat;
+  background-size: 100%;
+  opacity: 1;
+} */
+
+
+.twitter_box_1.normal_v4 .box_image_in{
+  box-shadow: 0 0 0 .15vh #c93a3a,0 0 1vh rgba(0, 0, 0, 0.35) inset,0 0 .6vh rgba(0, 0, 0, 1) inset;
+  border-radius: 50%;
+}
+/* .twitter_box_1.normal_v2 .box_image_in::before{
+  background: #3abed1;
+} */
+
+.twitter_box_1.normal_v4 .box_image_in img{
+  border-radius: 50%;
+}
+.twitter_box_1.normal_v4 .tw_name{
+  color: #ea5151;
+}
+.twitter_box_1.normal_v4 .box_image_in::before, .twitter_box_1.normal_v2 .box_image_in::after{
+  opacity: 0;
+}
+.twitter_box_1.normal_v4 .border_theme{
+  /* margin-top: -.4vh; */
+  position: absolute;
+  width: 3.3vh;
+  height: 3.3vh;
+  /* background: red; */
+  opacity: 1;
+  margin-top: 1.3vh;
+  margin-left: .8vh;
+  background: url(./img/nm_bd_1.png) center no-repeat;
+  background-size: 100%;
+  filter: drop-shadow(0 .3vh .2vh rgba(0, 0, 0, 0.35));
+  z-index: 4;
+}
+.twitter_box_1.normal_v4::before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(./img/nm_5.png) top no-repeat;
+  background-size: 120%;
+  opacity: .08;
+}
+/* .twitter_box_1.normal_v4 .tw_box_detail::before{
+  position: absolute;
+  content: "";
+  bottom: 0vh;
+  right: 0vh;
+  width: 4vh;
+  height: 4vh;
+  background: url(./img/tt_1.png) bottom no-repeat;
+  background-size: 100%;
+  opacity: 1;
+  filter: grayscale(1);
+  z-index: 0;
+} */
+
+
+
+
+
+
+
+
+
+
+
+.twitter_box_1.bread_v1{
+  background: linear-gradient(45deg,#2d2014d9,#774c32d9);
+  box-shadow: 0 0 0 .1vh #855b33 inset;
+}
+/* .twitter_box_1.normal_v1::after{
+  opacity: 1;
+  background: #53919b;
+} */
+/* .twitter_box_1.normal_v1::before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(./img/bg_bd_02.png) top repeat;
+  background-size: 100%;
+  opacity: 1;
+} */
+
+
+.twitter_box_1.bread_v1 .box_image_in{
+  box-shadow: 0 0 0 .1vh #c27c36;
+  border-radius: 50%;
+}
+/* .twitter_box_1.normal_v2 .box_image_in::before{
+  background: #3abed1;
+} */
+
+.twitter_box_1.bread_v1 .box_image_in img{
+  border-radius: 50%;
+}
+.twitter_box_1.bread_v1 .tw_name{
+  color: #e9a15d;
+}
+.twitter_box_1.bread_v1 .box_image_in::before, .twitter_box_1.normal_v2 .box_image_in::after{
+  opacity: 0;
+}
+.twitter_box_1.bread_v1 .border_theme{
+  margin-top: -.2vh;
+  position: absolute;
+  width: 5vh;
+  height: 5vh;
+  /* background: red; */
+  opacity: 1;
+  background: url(./img/bread_frame.png) center no-repeat;
+  background-size: 100%;
+  filter: drop-shadow(0 .3vh .2vh rgba(0, 0, 0, 0.35));
+  z-index: 4;
+}
+.twitter_box_1.bread_v1::before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(./img/bg_bd_04.png) top no-repeat;
+  background-size: 200%;
+  opacity: .05;
+}
+.twitter_box_1.bread_v1 .tw_box_detail::before{
+  position: absolute;
+  content: "";
+  bottom: -.5vh;
+  right: -.6vh;
+  width: 4vh;
+  height: 4vh;
+  background: url(./img/bread_01.png) bottom no-repeat;
+  background-size: 100%;
+  opacity: 1;
+  rotate: 9deg;
+  z-index: 7;
+  /* animation: float_01 5s ease infinite; */
+}
+
+
+
+
+
+@keyframes float_01{
+  0%{
+    transform: translateY(0);
+  }25%{
+    transform: translateY(-.2vh) rotate(5deg);
+  }50%{
+    transform: translateY(-.5vh) rotate(-5deg);
+  }100%{
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.twitter_box_1.universe_v1{
+  background: linear-gradient(45deg,#1f142dd9,#432c62d9);
+  box-shadow: 0 0 0 .1vh #9d7fffb9 inset;
+}
+/* .twitter_box_1.normal_v1::after{
+  opacity: 1;
+  background: #53919b;
+} */
+/* .twitter_box_1.normal_v1::before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(./img/bg_bd_02.png) top repeat;
+  background-size: 100%;
+  opacity: 1;
+} */
+
+
+.twitter_box_1.universe_v1 .box_image_in{
+  box-shadow: 0 0 0 .15vh #846ad8;
+  border-radius: 50%;
+}
+/* .twitter_box_1.normal_v2 .box_image_in::before{
+  background: #3abed1;
+} */
+
+.twitter_box_1.universe_v1 .box_image_in img{
+  border-radius: 50%;
+}
+.twitter_box_1.universe_v1 .tw_name{
+  color: #c9a3ff;
+}
+.twitter_box_1.universe_v1 .box_image_in::before, .twitter_box_1.normal_v2 .box_image_in::after{
+  opacity: 0;
+}
+.twitter_box_1.universe_v1 .border_theme{
+  margin-top: -4.5vh;
+  position: absolute;
+  width: 5vh;
+  height: 5vh;
+  opacity: 1;
+  /* background: url(./img//star_01.webp) center no-repeat; */
+  background-size: 100%;
+  filter: drop-shadow(0 .3vh .2vh rgba(0, 0, 0, 0.35));
+  z-index: 4;
+  rotate: -12deg;
+}
+.twitter_box_1.universe_v1::before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(./img/universe.jpg) top no-repeat;
+  background-size: 110%;
+  opacity: .3;
+}
+
+
+.twitter_box_1.universe_v1 .tw_box_detail::before{
+  position: absolute;
+  content: "";
+  bottom: 0vh;
+  right: -.3vh;
+  width: 5vh;
+  height: 4.5vh;
+  background: url(img/star_01.webp) top no-repeat;
+  background-size: 120%;
+  opacity: 1;
+  z-index: 7;
+}
+
+
+
+
+
+
+
+
+.twitter_box_1.vip_v1{
+  background: linear-gradient(45deg,#8e6f39db,#785f33db);
+  background: linear-gradient(45deg,#685636db,#997d4ad4);
+  /* background: #6b5a3cdb; */
+  box-shadow: 0 0 0 .1vh #b9934d inset, 0 0 1vh #0000004b inset;
+
+}
+
+.twitter_box_1.vip_v1 .tw_name{
+  color: #ffd78d;
+}
+/* .twitter_box_1.vip_v1::before{
+  position: absolute;
+  content: '';
+  width: 10%;
+  height: 100%;
+  background: #c99e4f;
+} */
+
+
+
+/* .twitter_box_1.vip_v1::after{
+  opacity: 1;
+  background: #c99e4f;
+} */
+
+.twitter_box_1.vip_v1::before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(./img/bg_bd_02.png) top repeat;
+  background-size: 100%;
+  opacity: .7;
+  filter: grayscale(1);
+}
+
+.twitter_box_1.vip_v1 .box_image_in{
+  box-shadow: none;
+  box-shadow: 0 0 0 .15vh #c99e4f,0 0 .5vh rgba(0, 0, 0, 0.35) inset;
+  border-radius: 50%;                       
+}
+.twitter_box_1.vip_v1 .box_image_in img{
+  border-radius: 50%;
+}
+.twitter_box_1.vip_v1 .box_image_in::before, .twitter_box_1.vip_v1 .box_image_in::after{
+  opacity: 0;
+}
+
+
+.twitter_box_1.vip_v1 .border_theme{
+  /* margin-top: -.4vh; */
+  position: absolute;
+  width: 5vh;
+  height: 5vh;
+  /* background: red; */
+  opacity: 1;
+  background: url(./img/bd_01.png) center no-repeat;
+  background-size: 120%;
+  filter: drop-shadow(0 .3vh .2vh rgba(0, 0, 0, 0.35));
+  z-index: 4;
+}
+
+/* .twitter_box_1.vip_v1 .tw_box_detail::before{
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  width: 5vh;
+  height: 5vh;
+  background: url(crown_01.png) bottom no-repeat;
+  background-size: 90%;
+  opacity: .3;
+} */
+
+
+
+
+
+
+
+
+
+.twitter_box_1.newbie_v1{
+  background: linear-gradient(45deg,#652c40e2,#5f1c34e2);
+  box-shadow: 0 0 0 .1vh #ff569185 inset;
+}
+.twitter_box_1.newbie_v1 .tw_name{
+  color: #ff77a7;
+}
+/* .twitter_box_1.newbie_v1::before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(https://t4.ftcdn.net/jpg/02/81/25/31/360_F_281253189_A1GYRtKi8dKiZYip4yerjW8qTWG7KdgL.jpg) top;
+  background-size: 25vh;
+  opacity: .06;
+  filter: grayscale(1);
+} */
+
+
+.twitter_box_1.newbie_v1 .border_theme{
+  margin-top: -.4vh;
+  position: absolute;
+  width: 5vh;
+  height: 5vh;
+  background-size: 100%;
+  z-index: 4;
+}
+.twitter_box_1.newbie_v1 .box_image_in{
+  box-shadow: 0 0 0 .15vh #fb4888, 0 0 1vh #c5184c;
+  border-radius: 50%;
+}
+.twitter_box_1.newbie_v1 .box_image_in img{
+  border-radius: 50%;
+}
+.twitter_box_1.newbie_v1 .box_image_in::before,.twitter_box_1.newbie_v1 .box_image_in::after{
+  opacity: 0;
+}
+
+.twitter_box_1.newbie_v1 .border_theme{
+  margin-top: -.4vh;
+  position: absolute;
+  width: 5vh;
+  height: 5vh;
+  background: url(./img/border_newbie01.png
+  ) center no-repeat;
+  background-size: 120%;
+  z-index: 4;
+  filter: drop-shadow(0 .2vh .1vh rgba(0, 0, 0, 0.5));
+}
+
+.twitter_box_1.newbie_v1 .tw_box_detail::before{
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  width: 3.2vh;
+  height: 3.2vh;
+  background: url(./img/chick_01.png) bottom no-repeat;
+  background-size: 100%;
+  opacity: 1;
+  z-index: 4;
+}
+
+
+
+@keyframes anm_prof_01{
+  0%{
+    rotate: 0;
+  }100%{
+    rotate: 360deg;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+.tw_box_image{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: .4vh;
+  width: 5vh;
+  height: 5.5vh;
+}
+
+.box_image_in{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.8vh;
+  height: 3.8vh;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0 .1vh rgb(72, 72, 72) inset;
+}
+.box_image_in>iconify-icon:not(.question_icon){
+  position: absolute;
+  font-size: 1.7vh;
+}
+.question_icon{
+  position: absolute;
+  color: #ffffff;
+  font-size: 2.2vh;
+  opacity: .8;
+}
+
+
+.box_image_in::before{
+  position: absolute;
+  content: "";
+  width: .8vh;
+  height: .8vh;
+  background: rgb(72, 72, 72);
+  left: 0vh;
+  top: 0vh;
+  z-index: 5;
+  clip-path: polygon(100% 0, 0 0, 0 100%);
+}
+/* .box_image_in::after{
+  position: absolute;
+  content: "";
+  width: .8vh;
+  height: .8vh;
+  background: rgb(72, 72, 72);
+  right: 0vh;
+  bottom: 0vh;
+  z-index: 5;
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+
+} */
+
+
+
+.bd_add_twitter{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.8vh;
+  height: 3.8vh;
+}
+.bd_add_twitter>div{
+  position: absolute;
+  width: 1vh;
+  height: 1vh;
+}
+.bd_add_twitter>div:nth-child(1){
+  left: var(--border_dis_ag);
+  bottom: var(--border_dis_ag);
+  rotate: -90deg;
+}
+.bd_add_twitter>div:nth-child(2){
+  right: var(--border_dis_ag);
+  bottom: var(--border_dis_ag);
+  rotate: 180deg;
+}
+.bd_add_twitter>div:nth-child(3){
+  right: var(--border_dis_ag);
+  top: var(--border_dis_ag);
+  rotate: 90deg;
+}
+.bd_add_twitter>div:nth-child(4){
+  top: var(--border_dis_ag);
+  left: var(--border_dis_ag);
+  rotate: 360deg;
+}
+
+
+.bd_add_twitter>div::before{
+  position: absolute;
+  content: "";
+  width: .72vh;
+  height: .72vh;
+  clip-path: polygon(100% 0, 100% 17%, 17% 17%, 17% 100%, 0 100%, 0 0);
+  background: var(--main_1);
+  clip-path: polygon(100% 0, 0 0, 0 100%);
+  opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+.box_image_in>img{
+  width: 3.6vh;
+  height: 3.6vh;
+  object-fit: cover;
+  z-index: 3;
+}
+
+
+
+
+
+
+
+
+
+.tw_box_detail{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-right: 1.2vh;
+  padding-left: .5vh;
+  padding-bottom: .8vh;
+  width: 26vh;
+}
+
+.tw_name_area{
+  margin-top: .4vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  width: 100%;
+  height: 2vh;
+}
+
+
+
+
+.tw_tag{
+  position: absolute;
+  right: -1.8vh;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.8vh;
+  height: 100%;
+  background: var(--twitter_vip1);
+  border-radius: 0 .4vh .4vh 0;
+}
+.tw_tag>p{
+  transform: rotate(90deg);
+  font-size: 1vh;
+}
+
+
+.tw_name_area>.tw_name{
+  max-width: 22vh;
+  padding-right: 1vh;
+  font-size: 1.2vh;
+  color: #fffffff8;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tw_name_area>.tw_time{
+  position: absolute;
+  right: 1.1vh;
+  top: 1vh;
+  font-size: 1vh; 
+  color: #ffffffda;
+}
+
+
+.tw_comment_area{
+  margin-top: .3vh;
+  flex-wrap: wrap;
+  width: 100%;
+  max-height: 4.5vh;
+  z-index: 5;
+}
+.tw_comment_area>p{
+  color: #e7e7e7fa;
+  font-size: 1.15vh;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+          line-clamp: 3; 
+  -webkit-box-orient: vertical;
+}
+.tw_comment_area>p:empty{
+  height: 0;
+}
+
+
+
+.tw_img_area{
+  display: none;
+  position: relative;
+  margin-top: .5vh;
+  width: 24.5vh;
+  height: 13vh;
+  margin-bottom: .2vh;
+  background: rgba(0, 0, 0, 0.35);
+  /* overflow: hidden; */
+  z-index: 3;
+  box-shadow: 0 .3vh .3vh rgba(0, 0, 0, 0.25);
+}
+.tw_img_area>img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.twitter_box_1.img_add .tw_img_area{
+  display: block;
+}
+.twitter_box_1.img_add .tw_box_detail{
+  /* width: 20vh; */
+}
+.twitter_box_1.img_add .tw_comment_area>p{
+  -webkit-line-clamp: 2;
+          line-clamp: 2; 
+  -webkit-box-orient: vertical;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.display_custom_chat{
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: rgba(11, 11, 11, 0.65);
+  z-index: 999;
+}
+
+.container_custom_chat{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vh;
+}
+
+
+
+
+.custom_chat_header{
+  position: absolute;
+  top: 1.5vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.custom_chat_header>p{
+  text-align: center;
+  width: 0vh;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #fffffff1;
+  font-size: 3vh;
+}
+.custom_chat_header>p:nth-child(1){
+  animation: typing .6s steps(22) forwards;
+}
+.custom_chat_header>p:nth-child(2){
+  margin-top: -.4vh;
+  font-size: 1.6vh;
+  color: #ffffffbd;
+  animation: typing .6s .3s steps(22) forwards;
+}
+
+
+
+
+
+
+.preview_area{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .6vh;
+  width: 34vh;
+  width: 42vh;
+  height: 48vh;
+  /* background: var(--bg); */
+  /* box-shadow: 0 0 0 .1vh rgb(67, 67, 67) inset; */
+  padding-bottom: 1.8vh;
+}
+
+
+
+
+
+.preview_t_name{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: #ffffffa5;
+  font-size: 1.2vh;
+  bottom: 6.5vh;
+  text-align: start;
+  gap: .8vh;
+}
+.preview_t_name>p:nth-child(2){
+  color: #ffffffe8;
+  margin-top: -.5vh;
+}
+
+
+
+@keyframes typing {
+  to {
+    width: 26vh;
+  }
+}
+
+
+/* .preview_t_name>p:nth-child(1){
+  color: rgb(146, 146, 146);
+  font-size: 1.3vh;
+  margin-bottom: .3vh;
+} */
+
+
+.button_theme{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0vh;
+  width: 15vh;
+  height: 3.7vh;
+  background: var(--main_5);
+  color: var(--main_8_font);
+  font-size: 1.3vh;
+  box-shadow: 0 0 0 .1vh var(--main_1) inset;
+  cursor: pointer;
+  gap: .6vh;
+  transition: all .3s;
+}
+.button_theme:hover{
+  background: var(--main_6);
+  transition: .3s ease;
+}
+.button_theme>p{
+  position: relative;
+  transition: all .3s;
+  transition-delay: .3s ;
+}
+.button_theme>p::after{
+  position: relative;
+  content: "EQUIP THEME";
+  color: var(--main_8_font);
+  font-size: 1.3vh;
+}
+
+.button_theme>.load_icon{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  /* display: none; */
+  opacity: 0;
+}
+.button_theme.loading>*{
+  /* display: none; */
+  opacity: 0;
+  transition: all .3s;
+}
+
+
+
+
+.button_theme>iconify-icon{
+  /* display: none; */
+  font-size: 1.3vh;
+  margin-left: -1.6vh;
+  color: #fff;
+  opacity: 0;
+}
+.button_theme>p{
+  z-index: 3;
+}
+.button_theme>.load_icon{
+  position: absolute;
+
+  opacity: 0;
+  /* display: block; */
+  font-size: 2vh;
+    margin-left: -0vh;
+
+}
+
+.button_theme.loading>.load_icon{
+  position: absolute;
+
+  opacity: 1;
+  /* display: block; */
+  font-size: 2vh;
+    margin-left: -0vh;
+
+}
+
+.button_theme.locked{
+  pointer-events: none;
+  opacity: .8;
+  background: rgba(51, 51, 51, 0.8);
+  box-shadow: 0 0 0 .1vh rgba(106, 106, 106, 0.8) inset;
+}
+.button_theme.locked>p::after{
+  content: 'LOCKED';
+  color: #fff;
+}
+.button_theme.locked>iconify-icon{
+  /* display: block; */
+  margin-left: -0vh;
+  opacity: 1;
+}
+.button_theme.locked>.load_icon{
+  /* display: none; */
+  opacity: 0;
+}
+
+.button_theme.equiped{
+  pointer-events: none;
+  opacity: 1;
+  background: rgba(51, 51, 51, 0.8);
+  box-shadow: 0 0 0 .1vh rgba(106, 106, 106, 0.8) inset;
+}
+.button_theme.equiped>p::after{
+  content: 'EQUIPED';
+  color: var(--main_8_font);
+}
+
+
+
+.button_theme.owned{
+  opacity: 1;
+}
+.button_theme.owned>p::after{
+  content: 'EQUIP THEME';
+  color: var(--main_8_font);
+}
+
+
+
+
+.button_theme::before{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: var(--main_6);
+  opacity: 0;
+  transform: scaleX(.4);
+}
+
+
+
+
+.chat_theme_area{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background: var(--bg); */
+}
+
+.chat_area_overflow_y{
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  gap: .5vh;
+  width: 36.5vh;
+  height: 41.5vh;
+  direction: rtl;
+  padding-left: 1vh;
+  padding-right: 2vh;
+  margin-right: 4vh;
+}
+/* .chat_theme_area::after{
+  position: absolute;
+  content: "Click to preview chat theme";
+  bottom: -2.8vh;
+  color: #ffffffa5;
+  font-size: 1.2vh;
+  width: 100%;
+} */
+.chat_theme_area::before{
+  position: absolute;
+  content: "CHAT THEME LIST";
+  width: 100%;
+  top: -2.5vh;
+  color: var(--main_8_font);
+  font-size: 1.2vh;
+}
+
+
+
+
+
+.chat_area_overflow_y>div{
+  direction: ltr;
+}
+
+
+
+
+::-webkit-scrollbar {
+  width: .3vh;
+
+}
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.12);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--main_linear);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.selection_theme{
+  order: 2;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  /* animation: appear 2s linear;
+  animation-timeline: view();
+  animation-range: entry 20%;
+  transition: all .4s ease; */
+}
+.selection_theme>.twitter_box_1{
+  filter: grayscale(.1);
+  opacity: .5;
+  transform: translateX(1.7vh);
+}
+
+/* .selection_theme:hover{
+  transform: translateX(.2vh);
+  transition: all .4s ease;
+} */
+
+
+.selection_theme::after{
+  pointer-events: none;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: '';
+  width: 100%;
+  height: 100%;
+  color: #ffffffdb;
+  font-size: 1.2vh ;
+  text-shadow: 0 0 .4vh black;
+  /* background: rgba(0, 0, 0, 0.4); */
+}
+
+.selection_theme.owned{
+  order: 1;
+}
+
+.selection_theme.owned>.twitter_box_1{
+  filter: none;
+  opacity: 1;
+}
+.selection_theme.owned::after{
+  opacity: 0;
+}
+
+
+
+@keyframes appear {
+  from {
+    scale: 0.8;
+  } to {
+    scale: 1;
+  }
+}
+
+
+
+
+
+.selection_theme>div{
+  pointer-events: none;
+}
+
+
+
+
+
+.selection_theme.locked>.twitter_box_1{
+  opacity: .65;
+}
+
+
+/* .selection_theme.active .twitter_box_1{
+  opacity: .7;
+} */
+
+
+.selection_status{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.4vh;
+  left: 0;
+  top: 0;
+  height: 100%;
+  color: #ffffff9e;
+  /* box-shadow: 0 0 0 .1vh var(--main_1) inset; */
+  background: var(--bg);
+  font-size: 1.2vh;
+  opacity: 1;
+
+}
+
+.selection_status>iconify-icon{
+  rotate: 180deg;
+}
+
+
+
+
+
+.selection_theme.hover{
+  filter: brightness(.8);
+}
+
+
+
+.selection_theme.active .selection_status{
+  opacity: 1;
+  color: var(--main_8_font);
+  box-shadow: 0 0 0 .1vh var(--main_1) inset;
+  background: var(--main_5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.arrow_div01{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 1vh;
+  height: 50vh;
+  /* background: var(--bg); */
+}
+
+.arrow_div01.flip{
+  transform: rotateY(180deg);
+}
+
+
+.arrow_div01::before{
+  position: absolute;
+  content: '';
+  width: .1vh;
+  height: 100%;
+  background: linear-gradient(0deg,transparent,var(--main_1),transparent);
+}
+.arrow_div01>div{
+  position: absolute;
+  margin-left: .2vh;
+  /* filter: drop-shadow(0 0 1vh var(--main_6)); */
+}
+.arrow_div01>div>div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.4vh;
+  height: 8vh;
+  background: var(--main_5);
+  clip-path: polygon(0 0, 100% 12%, 100% 88%, 0% 100%);
+  color: var(--main_8_font);
+  font-size: 1.3vh;
+}
+
+.selection_theme.icon_check{
+  opacity: 0;
+}
+.icon_check{
+  position: absolute;
+  width: 2vh;
+  height: 100%;
+  right: -4vh;
+  top: 50%;
+  transform: translate(0,-50%);
+  background: var(--main_5);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 0 0 .15vh var(--main_1) inset;
+  /* gap: -0.1vh; */
+  color: var(--main_1);
+  /* border-radius: 50%; */
+  font-size: 1.2vh;
+  z-index: 1000000;
+}
+.icon_check>*{
+  transform: rotate(90deg);
+}
+.selection_theme>.icon_check{
+  opacity: 0;
+}
+.selection_theme.use>.icon_check{
+  opacity: 1;
+}
